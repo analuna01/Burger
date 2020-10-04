@@ -1,4 +1,30 @@
-background-color {
-    color: yellow;
-};
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url(./burger_pattern.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.container{
+    background-color: tan;
+    text-align: center;
+    padding: 50px; 
+    margin: 50px;
+}
+
+#burger-image{
+    width: 150px;
+    height: 150px;
+}
+
+.created{
+    text-align: left;
+}
+
+.devoured{
+    text-align: right;
+}
 

@@ -4,32 +4,34 @@ $(function () {
         var id = $(this).data("id");
         var newBurger = $(this).data("newBurger");
 
-        var newBurgerCreated = { 
+        var newBurgerState = { 
             devoured: newBurger
         };
 
         // Send the PUT request.
         $.ajax("/api/burger/" + id, {
             type: "PUT",
-            data: newBurgerCreated,
-        }).then(
-            function () {
+            data: newBurgerState,
+        }).then(function () {
                 console.log("changed devoured burger", newBurger);
                 // Reload the page to get the updated list
                 location.reload();
             });
     });
+});
 
+$(function(){
     $(".create-form").on("submit", function (event) {
         // PreventDefault on a submit event.
         event.preventDefault();
+
         var newBurger = {
             name: $("#burger").val().trim(),
-            devoured: $("[name = devoured]:checked").val().trim()
+            // devoured: $("[name = devoured]:checked").val().trim()
         };
 
         // Send the POST request.
-        $.ajax("/api/burger/", {
+        $.ajax("/api/burger", {
             type: "POST",
             data: newBurger,
         }).then(
@@ -40,6 +42,8 @@ $(function () {
             }
         );
     });
+});
+
     // $(".delete").on('click', function() {
     //   const burgerId = $(this).data('id');
     //   $.ajax(`/api/burgers/${burgerId}`, {
@@ -50,4 +54,4 @@ $(function () {
     //     location.reload();
     //   })
     // });
-});
+
