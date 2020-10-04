@@ -19,6 +19,7 @@ This application is a burger logger that was created with MySQL database, Node, 
 MIT
 
 ## Screenshot Demo
+<img src= "public/assets/ScreenshotDemo.jpg" width:500>
 
 ## Questions
 - GitHub: github.com/analuna01
