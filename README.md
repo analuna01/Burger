@@ -20,7 +20,6 @@ Users can add a burger to be added to a list of "Burgers Created!" that will aut
 MIT
 
 ## Screenshot Demo
-<img src="/assets/ScreenshotDemo.jpg>
 
 ## Questions
 - GitHub: github.com/analuna01
