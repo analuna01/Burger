@@ -3,6 +3,6 @@ USE burgers_db;
 
 CREATE TABLE `burgers_db`.`burgers` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(100) NOT NULL,
-  `devoured` TINYINT NOT NULL DEFAULT 0,
+  `burger_name` VARCHAR(100) NOT NULL,
+  `devoured` TINYINT NOT NULL,
   PRIMARY KEY (`id`));
